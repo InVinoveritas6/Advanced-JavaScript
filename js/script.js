@@ -86,3 +86,18 @@
 // Promise.all([test(1000), test(2000)]).then(() => {
 //    console.log('All is ready');
 // });
+
+//...........................................Lesson №7.........................................
+
+// fetch('https://jsonplaceholder.typicode.com/posts', {
+//       method: "POST",
+//       body: JSON.stringify({
+//          name: ' Alex'
+//       }),
+//       headers: {
+//          'Context-type': 'application/json'
+//       }
+
+//    })
+//    .then(response => response.json())
+//    .then(json => console.log(json));
