@@ -39,4 +39,50 @@
 //    });
 // });
 
-//...........................................Lesson №4.........................................
+//...........................................Lesson №6.........................................
+
+// console.log('Запрос даных...');
+
+// const seq = new Promise(function (resolve, reject) {
+//    setTimeout(() => {
+//       console.log('Подготовка данных');
+
+//       const prod = {
+//          name: 'VTV',
+//          price: 2000
+//       };
+
+//       resolve(prod);
+//    }, 2000);
+// });
+
+// seq.then((prod) => {
+//    return new Promise((resolve, reject) => {
+//       setTimeout(() => {
+//          prod.status = 'order';
+//          reject(prod);
+//       }, 2000);
+//    }).then(data => {
+//       data.modyfy = '123';
+//       return data;
+//    }).then(data => {
+//       console.log(data);
+//    }).catch(() => {
+//       console.error('Произошла ошибка');
+//    });
+// });
+// const test = time => {
+//    return new Promise(resolve => {
+//       setTimeout(() =>
+//          resolve(), time);
+//    });
+// };
+// // test(1000).then(() => {
+// //    console.log('100 ms');
+// // });
+// // test(2000).then(() => {
+// //    console.log('200 ms');
+// // });
+// Promise.all([test(1000), test(2000)]).then(() => {
+//    console.log('All is ready');
+// });
