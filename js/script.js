@@ -87,17 +87,68 @@
 //    console.log('All is ready');
 // });
 
-//...........................................Lesson №7.........................................
+//...........................................Lesson №8.........................................
 
-// fetch('https://jsonplaceholder.typicode.com/posts', {
-//       method: "POST",
-//       body: JSON.stringify({
-//          name: ' Alex'
-//       }),
-//       headers: {
-//          'Context-type': 'application/json'
-//       }
 
-//    })
-//    .then(response => response.json())
-//    .then(json => console.log(json));
+//-------------МЕТОД FILTER
+
+// const names = ['Ivan', 'Ann', 'Ksenia', 'Voldemart'];
+
+
+//------------Фильтрация через обычную функцию
+// const shortNames = names.filter(function(name) {
+//    return name.length < 5;
+// });
+
+
+//-----------Фильтрация через call back функцию 
+// const shortNames = names.filter((name) => {
+//    return name.length < 5;
+// });
+
+// console.log(shortNames);
+
+//-------------МЕТОД MAP
+
+// const answer = ['IvAn', 'AnnA', 'Hello'];
+
+// const result = answer.map((item) => {
+//    return item.toLowerCase();
+// });
+
+// console.log(result);
+
+ //-------------МЕТОД SOME/EVERY
+
+//  const some = [4, 'ble', 'blu'];
+
+//  console.log(some.every(item => {
+//     return typeof(item) === 'number';
+//  }));
+
+//------------МЕТОД REDUCE С ЧИСЛАМИ
+
+// const arr = [4, 5, 1, 3, 2, 6];
+//                         0     4
+//                         4     5
+//                         9     1
+//                         10    3
+// const res = arr.reduce((sum, current) => sum + current);
+
+// console.log(res);
+
+//------------МЕТОД REDUCE СО СТРОКАМИ
+
+// const arr = ['APPLT', 'Beer', 'Carrot'];
+
+// const res = arr.reduce((sum, current) => sum + ',' + current);
+
+// console.log(res);
+
+// const arr = ['APPLT', 'Beer', 'Carrot'];
+
+// const res = arr.map(item => item.toLowerCase())
+//                .reduce((sum, current) => `${sum}, ${current}`);
+
+// console.log(res);
+
