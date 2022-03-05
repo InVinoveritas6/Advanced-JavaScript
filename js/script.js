@@ -152,3 +152,28 @@
 
 // console.log(res);
 
+
+//...........................................Lesson №12 Регулярные выражения.........................................
+
+// new RegExp('pattern', 'flags')
+
+// /pattern/flags
+
+//  const ans = prompt('введите ваше имя');
+
+// const reg = /\d/g;
+
+// console.log(ans.match(reg));
+
+//  console.log(ans.search(reg));
+// console.log(ans.match(reg));
+
+// const pass = prompt('ggg')
+
+// console.log(pass.replace(/\./g,'1'));
+
+// console.log('12-34-36'.replace(/-/g, ':'));
+
+// const str = "My name is R2D2";
+// console.log(str.match(/\D/ig));
+
